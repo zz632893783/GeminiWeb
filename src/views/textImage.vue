@@ -43,6 +43,7 @@ const send = async () => {
     const result = await model.generateContent([inputQuestion.value, ...imageParts]);
     const response = await result.response;
     const text = response.text();
+    console.log(text);
 };
 </script>
 <style lang="scss" scoped>
